@@ -1,4 +1,4 @@
-package com.ali.entity;
+package com.bank.pojo;
 
 import lombok.Data;
 

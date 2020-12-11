@@ -6,23 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ConfigClient" />
-        <module name="GetWay" />
-        <module name="User" />
         <module name="EurekaServer" />
         <module name="pojo" />
+        <module name="ConfigClient" />
+        <module name="User" />
+        <module name="GetWay" />
+        <module name="ConsumerProvider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aaa" target="1.8" />
+      <module name="Consumer" target="1.8" />
       <module name="GetWay" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ConfigClient" options="-parameters" />
+      <module name="Consumer" options="-parameters" />
+      <module name="ConsumerProvider" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
       <module name="GetWay" options="-parameters" />
       <module name="User" options="-parameters" />
+      <module name="aaa" options="-parameters" />
       <module name="bank" options="-parameters" />
       <module name="pojo" options="-parameters" />
     </option>
